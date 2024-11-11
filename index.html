@@ -7,65 +7,63 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
+
         <nav>
             <ul>
-                <li><a href="pagina1.html">ARTISTA</a></li>
-                <li><a href="pagina2.html">ÁLBUMES</a></li>
-                <li><a href="pagina3.html">CONCIERTO</a></li>
-                <li><a href="pagina4.html">TIENDA</a></li>
-                <li><a href="pagina5.html">CONTACTO</a></li>
+                <li><a href="biografia.html">BIOGRAFIA</a></li>
+                <li><a href="#members">MIEMBROS</a></li>
+                <!-- <li><a href="tienda.html">TIENDA</a></li> -->
+                <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-    </header>
+
     <!-- Imagen del logo principal -->
     <img src="logo.png" alt="Logo" class="logo">
 
-
-    <h1 class="title">Nuestros Artistas</h1>
-    <!-- Sección de tarjetas debajo del logo -->
-    <div class="cards">
-        <div class="card">
-            <img src="miembro.png" alt="miembro">
-            <h3 class="card-title">Título 1</h3>
-            <p class="card-description">Descripción de la tarjeta 1.</p>
-        </div>
-        <div class="card">
-            <img src="miembro.png" alt="miembro">
-            <h3 class="card-title">Título 2</h3>
-            <p class="card-description">Descripción de la tarjeta 2.</p>
-        </div>
-        <div class="card">
-            <img src="miembro.png" alt="miembro">
-            <h3 class="card-title">Título 3</h3>
-            <p class="card-description">Descripción de la tarjeta 3.</p>
-        </div>
-    </div>
-
-
-    <h1 class="title">Ultimos lanzamientos</h1>
-    <div class="cards">
-        <div class="card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xcJtL7QggTI?si=eMnZzFvg3vkKyHvO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3 class="card-title">Noticia 1</h3>
-            <p class="card-description">Resumen de la noticia 1. Un breve extracto del contenido principal.</p>
-        </div>
-        <div class="card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/njX2bu-_Vw4?si=r1c9xzRvR7wbq7ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3 class="card-title">Noticia 2</h3>
-            <p class="card-description">Resumen de la noticia 2. Un breve extracto del contenido principal.</p>
-        </div>
-        <div class="card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mkggXE5e2yk?si=QY8FSQlcBqOCbhNP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3 class="card-title">Noticia 3</h3>
-            <p class="card-description">Resumen de la noticia 3. Un breve extracto del contenido principal.</p>
-        </div>
-
-    <!-- Sección de noticias -->
+    <main>
+        <!-- Sección de tarjetas debajo del logo -->
+        <section id="members" class="cards">
+            <h2>Nuestros Artistas</h2>
+            <div class="card">
+                <img src="miembro.png" alt="miembro">
+                <h3 class="card-title">ZIROK</h3>
+                <p class="card-description">Cantante y productor que fusiona rap en un sonido auténtico.</p>
+            </div>
+            <div class="card">
+                <img src="miembro.png" alt="miembro">
+                <h3 class="card-title">KEVIRO</h3>
+                <p class="card-description">Rapera con letras profundas y estilo único en la música urbana.</p>
+            </div>
+            <!-- <div class="card">
+                <img src="miembro.png" alt="miembro">
+                <h3 class="card-title"> </h3>
+                <p class="card-description"> </p>
+            </div> -->
+        </section>
 
 
-        <h1 class="title">Noticias Recientes</h1>
-        <div class="cards">
+        <section id="release" class="cards">
+            <h2>Ultimos lanzamientos</h2>
+            <div class="card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gEoICTJY6a0?si=dnCNllwZSq3dQc1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3 class="card-title">Pensamiento</h3>
+                <p class="card-description">Ultima canción en colaboracion con otro artista.</p>
+            </div>
+            <div class="card">
+                <img src="portada.png" alt="portada" class="portada">
+                <h3 class="card-title">Perspectiva - Fisico</h3>
+                <p class="card-description">Disco lanzado en 2017, en formato fisico.</p>
+            </div>
+             <div class="card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TOirN-Ypvqk?si=bhKKQd3biSrhkrsy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3 class="card-title">Perspectiva - Digital</h3>
+                <p class="card-description">Disco completo en formatico digital.</p>
+            </div>
+        </section>
+
+        <!-- Sección de noticias -->
+        <!-- <section id="news" class="cards">
+            <h2>Noticias Recientes</h2>
             <div class="card">
                 <h6 class="card-date">02 NOVIEMBRE, 2024</h6>
                 <h3 class="card-title">Noticia 1</h3>
@@ -96,7 +94,12 @@
                 <h3 class="card-title">Noticia 3</h3>
                 <p class="card-description">Resumen de la noticia 3. Un breve extracto del contenido principal.</p>
             </div>
-        </div>
+        </section> -->
+    </main>
 
+
+            <footer class="footer">
+                <h4>&copy; 2024 Zona Zero Estudios. Todos los derechos reservados.</h4>
+            </footer>
 </body>
 </html>
