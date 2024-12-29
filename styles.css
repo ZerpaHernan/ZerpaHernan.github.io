@@ -1,3 +1,15 @@
+.dropdown:hover .dropdown-menu {
+display: block;
+background-color: #222;
+}
+.dropdown-menu a{
+color: #ccc;
+}
+.dropdown-item i {
+margin-right: 20px;
+color: #ccc;
+}
+
 nav {
     background-color: #222;
     padding-block: 10px;
@@ -21,6 +33,20 @@ nav ul li a {
     color: #ff8000;
     font-family: Arial, sans-serif;
 }
+
+.navbar-custom {
+    background-color: #222; /* Color de fondo */
+    border-bottom: 2px solid #252525; /* Línea decorativa */
+}
+
+.navbar-custom .nav-link {
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ff8000; /* Color al pasar el mouse */
+} 
 
 body, html {
     margin: 0;
@@ -192,16 +218,74 @@ button.eliminar {
   background: #dc3545;
 }
 
-.navbar-custom {
-    background-color: #222; /* Color de fondo */
-    border-bottom: 2px solid #252525; /* Línea decorativa */
+/* Animación de opacidad en dropdown */
+.dropdown-menu {
+    animation: fadeIn 0.5s ease;
 }
 
-.navbar-custom .nav-link {
-    color: #fff; /* Color del texto */
-    font-weight: bold;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.navbar-custom .nav-link:hover {
-    color: #ff8000; /* Color al pasar el mouse */
-} 
+/* Efecto de zoom en las imágenes de las tarjetas */
+.card img, .card iframe {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img:hover, .card iframe:hover {
+    transform: scale(1.05); /* Zoom */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Resaltar el borde al pasar sobre las tarjetas */
+.card:hover {
+    border: 2px solid #ff8000;
+    transition: border 0.3s ease;
+}
+
+/* Efecto de fade para el texto de las tarjetas */
+.card-title, .card-description {
+    animation: fadeInText 0.7s ease;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto para botones del navbar (toggler) */
+.navbar-toggler {
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    transform: rotate(90deg);
+}
+
+/* Efecto resplandor en el footer */
+.navbar-brand {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+    0% { text-shadow: 0 0 5px #ff8000, 0 0 10px #ff8000; }
+    50% { text-shadow: 0 0 15px #ff8000, 0 0 20px #ff8000; }
+    100% { text-shadow: 0 0 5px #ff8000, 0 0 10px #ff8000; }
+}
