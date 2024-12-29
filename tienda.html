@@ -10,63 +10,69 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#">Zona Zero</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="biografia.html">Biografía</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#members">Miembros</a>
-                  </li>
-                  <!-- <li class="nav-item">
-                      <a class="nav-link" href="tienda.html">Tienda</a>
-                  </li> -->
-                  <li class="nav-item">
-                      <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-              </ul>
-          </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Zona Zero</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="biografia.html">Biografía</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#members">Miembros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
       </div>
+    </div>
   </nav>
 
-</head>
-<body>
   <header>
     <h2>Tienda de Productos</h2>
   </header>
+  
   <div class="container">
     <div class="productos">
       <h2>Productos</h2>
-      <div class="card" data-id="1" data-nombre="Producto 1" data-precio="100">
+      <div class="card" data-id="1" data-nombre="Producto 1" data-precio="100" data-descripcion="Descripción detallada del Producto 1.">
         <h3>Producto 1</h3>
         <p>Precio: $100</p>
+        <button class="ver-detalles">Ver Detalles</button>
         <button class="agregar">Agregar al Carrito</button>
       </div>
-      <div class="card" data-id="2" data-nombre="Producto 2" data-precio="200">
+      <div class="card" data-id="2" data-nombre="Producto 2" data-precio="200" data-descripcion="Descripción detallada del Producto 2.">
         <h3>Producto 2</h3>
         <p>Precio: $200</p>
+        <button class="ver-detalles">Ver Detalles</button>
         <button class="agregar">Agregar al Carrito</button>
       </div>
-      <div class="card" data-id="3" data-nombre="Producto 3" data-precio="300">
+      <div class="card" data-id="3" data-nombre="Producto 3" data-precio="300" data-descripcion="Descripción detallada del Producto 3.">
         <h3>Producto 3</h3>
         <p>Precio: $300</p>
+        <button class="ver-detalles">Ver Detalles</button>
         <button class="agregar">Agregar al Carrito</button>
       </div>
     </div>
+
+    <div id="descripcion-producto" class="descripcion" style="display: none;">
+      <h3>Detalles del Producto</h3>
+      <p id="descripcion-texto"></p>
+    </div>
+
     <div class="carrito">
       <h2>Carrito</h2>
       <div id="carrito-items"></div>
       <p id="total"></p>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
-</html>
+</html

@@ -1,3 +1,27 @@
+// Seleccionar elementos
+const detalleBotones = document.querySelectorAll('.ver-detalles');
+const descripcionContenedor = document.getElementById('descripcion-producto');
+const descripcionTexto = document.getElementById('descripcion-texto');
+
+// Agregar eventos a los botones de "Ver Detalles"
+detalleBotones.forEach((boton) => {
+  boton.addEventListener('click', () => {
+    const producto = boton.parentElement;
+    const descripcion = producto.getAttribute('data-descripcion');
+    
+    // Mostrar la descripción del producto
+    descripcionTexto.textContent = descripcion;
+    descripcionContenedor.style.display = 'block';
+  });
+});
+
+// Opcional: Ocultar la descripción al hacer clic fuera del contenedor
+document.addEventListener('click', (event) => {
+  if (!descripcionContenedor.contains(event.target) && !event.target.classList.contains('ver-detalles')) {
+    descripcionContenedor.style.display = 'none';
+  }
+});
+
 // Variables globales
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
