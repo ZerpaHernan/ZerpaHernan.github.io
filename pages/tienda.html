@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZIRO - Tienda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div class="container-fluid">
+          <div class="dropdown">
+              <a class="navbar-brand dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ZIRO
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.instagram.com/zerpa.hernan/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a class="dropdown-item" href="https://www.facebook.com/zerpa.hernan" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li><a class="dropdown-item" href="https://x.com/ZirokPlay" target="_blank"><i class="fab fa-x"></i>X</a></li>
+                <li><a class="dropdown-item" href="https://www.youtube.com/@zirokmusic6303" target="_blank"><i class="fab fa-youtube"></i>YouTube</a></li>
+              </ul>
+          </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="biografia.html">Biografía</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#members">Miembros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <h2>Tienda de Productos</h2>
+  </header>
+  
+  <div class="container">
+    <div class="productos">
+      <h2>Productos</h2>
+      <div class="card" data-id="1" data-nombre="Gorra Ziro" data-precio="10000" data-descripcion="Lleva tu estilo a otro nivel con esta gorra exclusiva de Ziro. Con un diseño moderno y el logo oficial, es perfecta para representar el movimiento urbano donde quiera que vayas.">
+        <img src="/assets/images/gorra.png" alt="producto">
+        <h3>Gorra Ziro</h3>
+        <p>Precio: $10.000</p>
+        <button class="ver-detalles">Ver Detalles</button>
+        <button class="agregar">Agregar al Carrito</button>
+      </div>
+      <div class="card" data-id="2" data-nombre="Remera Ziro" data-precio="12000" data-descripcion="Marca la diferencia con esta remera única de Ziro. Confeccionada para ofrecer comodidad y estilo, su diseño destaca el icónico logo que representa tu música y tu mensaje.">
+        <img src="/assets/images/remera.png" alt="producto">
+        <h3>Remera Ziro</h3>
+        <p>Precio: $12.000</p>
+        <button class="ver-detalles">Ver Detalles</button>
+        <button class="agregar">Agregar al Carrito</button>
+      </div>
+      <div class="card" data-id="3" data-nombre="Disco Perspectiva" data-precio="5000" data-descripcion="Descubre el primer álbum de Ziro, 'Perspectiva', una experiencia musical auténtica que refleja vivencias, luchas y sueños. Incluye temas inéditos que conectan con el alma.">
+        <img src="/assets/images/perspectiva.png" alt="producto">
+        <h3>Disco Perspectiva</h3>
+        <p>Precio: $5.000</p>
+        <button class="ver-detalles">Ver Detalles</button>
+        <button class="agregar">Agregar al Carrito</button>
+      </div>
+      <div class="card" data-id="4" data-nombre="Buzo Ziro" data-precio="15000" data-descripcion="Mantén el estilo en cualquier temporada con este buzo canguro de Ziro. Su diseño casual y el logo icónico hacen de esta prenda una pieza esencial para todos los seguidores de la música urbana.">
+        <img src="/assets/images/buzo.png" alt="producto">
+        <h3>Buzo Ziro</h3>
+        <p>Precio: $15.000</p>
+        <button class="ver-detalles">Ver Detalles</button>
+        <button class="agregar">Agregar al Carrito</button>
+      </div>
+    </div>
+
+    <div id="descripcion-producto" class="descripcion" style="display: none;">
+      <h3>Detalles del Producto</h3>
+      <p id="descripcion-texto"></p>
+    </div>
+
+    <div class="carrito">
+      <h2>Carrito</h2>
+      <div id="carrito-items"></div>
+      <p id="total"></p>
+    </div>
+  </div>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html
