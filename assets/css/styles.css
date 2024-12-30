@@ -268,12 +268,8 @@ button.eliminar {
 }
 
 /* Efecto para botones del navbar (toggler) */
-.navbar-toggler {
-    transition: transform 0.3s ease;
-}
-
-.navbar-toggler:hover {
-    transform: rotate(90deg);
+.navbar-toggler, .navbar-toggler:hover {
+    width: 10%;
 }
 
 /* Efecto resplandor en el footer */
